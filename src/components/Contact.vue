@@ -49,7 +49,7 @@
 
 	/*reCAPTCHA*/
 
-	const SITE_KEY = '6LfLSQctAAAAADIz0m0LdZTe0MJsjrnupIKmWQEO';  // Replace with your site key
+	const SITE_KEY = '6Ld_egctAAAAAFoDMBagmHPYUwyR0B3pNs_YLtPJ';  // Replace with your site key
 
     const recaptchaContainer = ref(null);
 
@@ -156,6 +156,10 @@
 	              class="btn text-light px-4 rounded-pill">
 	              Request a Resume
 	            </button>
+	          </div>
+
+	          <div class="d-flex justify-content-end mt-2">
+	          	<div ref="recaptchaContainer"></div>
 	          </div>
 
 	        </form>
