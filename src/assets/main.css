@@ -1,0 +1,129 @@
+nav {
+	background: #FBF8CC;
+}
+
+nav a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+}
+
+/*landing*/
+
+#landing {
+	background: linear-gradient(
+				rgb(251, 248, 204),
+				rgb(50, 91, 74)
+			);
+	background-color: #FBF8CC;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	color: #005b4a;
+}
+
+#landing img {
+	width: 350px;
+	height: 350px;
+}
+
+#landing a {
+	background-color: #484738;
+}
+
+#hire:hover {
+  transform: scale(1.1);
+}
+
+/*Project*/
+
+#projects {
+	background-color: #005b4a;
+}
+
+#projects h1 {
+	color: #fbf8cc;
+	font-family: Montserrat;
+	font-weight: 900;
+	leading-trim: NONE;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+#projects img {
+	height: 230px;
+	width: 463px;
+}
+
+#projects h2 {
+	padding: 1rem 0 1rem 0;
+}
+
+.project {
+	background-color: #006d60;
+	color: #f2fedc;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+/*Tools*/
+
+.tool-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.tool-icon:hover {
+  transform: scale(1.1);
+}
+
+
+#tools {
+	color: #FBF8CC;
+	font-family: Courier New;
+	font-weight: 900;
+	leading-trim: NONE;
+	line-height: 24px;
+	letter-spacing: 0%;
+	background-color: #005b4a;
+}
+
+
+/*Contact*/
+
+#contact {
+	background-color: #FBF8CC;
+	color: #005b4a;
+
+	font-family: Montserrat;
+	font-weight: 900;
+	leading-trim: NONE;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+#contact button {
+	color: FBF8CC;
+	background-color: #005b4a;
+}
+
+form a {
+	color: #005b4a;
+}
+
+form a:hover, form button:hover {
+  transform: scale(1.1);
+}
+
+
+footer {
+	background-color: #005b4a;
+	color: #FBF8CC;
+
+	font-family: Montserrat;
+	leading-trim: NONE;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
