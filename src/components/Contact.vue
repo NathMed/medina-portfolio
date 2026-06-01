@@ -16,6 +16,12 @@
 	const subject = "A wild Pokémon appeared!";
 
 	const submitForm = async () => {
+
+		if(!recaptchaToken.value) {
+			notyf.error('Please verify that you are not a robot');
+			return;
+		}
+		
 		isLoading.value = true;
 
 		try {
@@ -44,6 +50,8 @@
 			console.log(error);
 			isLoading.value = false;
 			notyf.error("Failed to send message.");
+		} finally {
+			resetRecaptcha();
 		}
 	}
 
