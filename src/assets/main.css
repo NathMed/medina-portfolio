@@ -1,3 +1,31 @@
+:root {
+  /* ---- Color: base palette ----
+     Named so you know what each one is FOR, not just what it looks like.
+     If you ever want to re-theme the whole site, you only edit these 8 lines. */
+  --parchment: #FBF8CC;        /* main page background (cream) */
+  --parchment-soft: #F3EFC0;   /* slightly deeper cream, used for card surfaces sitting on --parchment */
+  --forest-deep: #0B4D3E;      /* primary dark green — nav bg, footer bg, headings on cream */
+  --forest-mid: #146356;       /* secondary green — project card backgrounds, tools section bg */
+  --brass: #C9A227;            /* accent gold — CTA buttons, badges, hover states, the "signature" color */
+  --brass-light: #E4C55A;      /* lighter brass, used for hover/focus on dark green backgrounds */
+  --ink: #1E2B24;              /* body text color when sitting on cream/parchment */
+  --cream-text: #F4F1DC;       /* body text color when sitting on forest-deep/forest-mid */
+ 
+  /* ---- Typography ----
+     Three roles, each doing one job:
+     - display: your name / big headings, gives the page personality
+     - body: paragraphs and nav links, needs to stay readable
+     - mono: tags, status badges, "code-like" labels — nods to what you build */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Poppins', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+ 
+  /* ---- Layout helpers ---- */
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 8px 24px rgba(11, 77, 62, 0.12);
+}
+
 nav {
 	background: #FBF8CC;
 }
@@ -29,10 +57,6 @@ nav a {
 
 #landing a {
 	background-color: #484738;
-}
-
-#hire:hover {
-  transform: scale(1.1);
 }
 
 /*Project*/
@@ -96,12 +120,12 @@ nav a {
 #contact {
 	background-color: #FBF8CC;
 	color: #005b4a;
-
 	font-family: Montserrat;
 	font-weight: 900;
 	leading-trim: NONE;
 	line-height: 24px;
 	letter-spacing: 0%;
+	height: 80vh !important;
 }
 
 #contact button {
