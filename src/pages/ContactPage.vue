@@ -320,6 +320,9 @@ onBeforeUnmount(() => {
 
 .btn-pill:hover {
   transform: scale(1.05);
+  box-shadow: var(--shadow-soft);
+  background-color: var(--ink) !important;
+  color: var(--brass);
 }
 
 .btn-pill:disabled {

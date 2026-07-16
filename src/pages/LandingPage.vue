@@ -35,8 +35,14 @@
             I'm currently focused on React, TypeScript, Node.js, Express, and PostgreSQL while continuously improving through hands-on projects.
           </p>
 
-          <a href="/contact" class="hire-btn">Hire me</a>
-          <a href="/projects" class="hire-btn ms-3">View my Projects & Tools</a>
+          <router-link
+              :to="{ path: '/contact' }"
+              class="hire-btn">Hire me
+          </router-link>
+          <router-link
+              :to="{ path: '/projects' }"
+              class="hire-btn ms-3">View my Projects & Tools
+          </router-link>
         </div>
 
         <!-- RIGHT: photo column.
