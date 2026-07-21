@@ -12,9 +12,9 @@
         "id": 2,
         "title": "Nectar & Nymphs (E-commerce App)",
         "description": "Developed a full-stack e-commerce platform using MongoDB, Express, Vue, and Node. Implemented JWT authentication, role-based access control, product management, and checkout workflows. Integrated a 24-endpoint RESTful API using Axios, Pinia, Vue Router, and Bootstrap to deliver a responsive 9-page application.",
-        "image": "/images/myProjects/E-commerce App.webp",
+        "image": "/images/myProjects/Nectar&Nymphs.png",
         "tools": ["Vue", "Node.js", "Express", "MongoDB"],
-        "liveUrl": "http://zuitt-bootcamp-prod-606-9535-medina.s3-website.us-east-1.amazonaws.com/",
+        "liveUrl": "https://nectar-nymphs-client.vercel.app/",
         "githubUrl": "https://github.com/NathMed/Nectar-Nymphs-server/blob/main/README.md"
     },
     {
@@ -38,7 +38,7 @@
     
     {
         "id": 5,
-        "title": "Flight606 (Airline Bookuing System)",
+        "title": "Flight606 (Airline Booking System)",
         "description": "Collaborated in the design and development of an airline booking system through multiple project phases. Contributed to UI development, Figma prototyping, repository management, testing, debugging, and deployment. Built responsive interfaces using HTML, CSS, Bootstrap, Vue.js, JavaScript, Node.js, Express.js, and MongoDB while supporting frontend and backend integration. The project remains under active development.",
         "image": "/images/myProjects/Flight606.png",
         "tools": ["Vue", "Node.js", "Express", "MongoDB"],
