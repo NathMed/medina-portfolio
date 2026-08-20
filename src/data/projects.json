@@ -1,15 +1,6 @@
 [   
     {
         "id": 1,
-        "title": "Adventurer's Codex (Blog App)",
-        "description": "Built a full-stack blog application using Vue.js, Node.js, Express.js, and MongoDB. Developed authentication and authorization features using JWT and role-based access control, implemented post and comment management, and integrated a 16-endpoint RESTful API. Deployed the application using Vercel and Render while applying form validation and responsive UI design with Bootstrap.",
-        "image": "/images/myProjects/Adventure-Codex.png",
-        "tools": ["Vue", "Node.js", "Express", "MongoDB"],
-        "liveUrl": "https://blog-app-client-woad-eight.vercel.app/",
-        "githubUrl": "https://github.com/NathMed/blogApp-server/blob/master/README.md"
-    },
-    {
-        "id": 2,
         "title": "Nectar & Nymphs (E-commerce App)",
         "description": "Developed a full-stack e-commerce platform using MongoDB, Express, Vue, and Node. Implemented JWT authentication, role-based access control, product management, and checkout workflows. Integrated a 24-endpoint RESTful API using Axios, Pinia, Vue Router, and Bootstrap to deliver a responsive 9-page application.",
         "image": "/images/myProjects/Nectar&Nymphs.png",
@@ -18,24 +9,32 @@
         "githubUrl": "https://github.com/NathMed/Nectar-Nymphs-server/blob/main/README.md"
     },
     {
+        "id": 2,
+        "title": "API Testing Project",
+        "description": "A hands-on API testing project focused on validating a MongoDB-backed Express.js REST API. Developed and refactored a 40-test integration suite using Mocha, Chai, and chai-http, covering user authentication, authorization, products, carts, and orders through positive and negative test scenarios.",
+        "image": "/images/myProjects/API-Testing-Project.png",
+        "tools": ["JavaScript", "Node.js", "Express", "MongoDB", "Mocha + Chai", "chai-http"],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/NathMed/api-testing-project/blob/master/README.md"
+    },
+    {
         "id": 3,
+        "title": "Adventurer's Codex (Blog App)",
+        "description": "Built a full-stack blog application using Vue.js, Node.js, Express.js, and MongoDB. Developed authentication and authorization features using JWT and role-based access control, implemented post and comment management, and integrated a 16-endpoint RESTful API. Deployed the application using Vercel and Render while applying form validation and responsive UI design with Bootstrap.",
+        "image": "/images/myProjects/Adventure-Codex.png",
+        "tools": ["Vue", "Node.js", "Express", "MongoDB"],
+        "liveUrl": "https://blog-app-client-woad-eight.vercel.app/",
+        "githubUrl": "https://github.com/NathMed/blogApp-server/blob/master/README.md"
+    },
+    {
+        "id": 4,
         "title": "Movie Catalog App",
         "description": "Built a full-stack movie catalog application using Vue.js, Node.js, Express.js, and MongoDB. Developed secure authentication and authorization features, movie browsing and management functionality, comment systems, and a 9-endpoint RESTful API. Deployed the frontend and backend using Vercel and Render.",
         "image": "/images/myProjects/Movie-App.png",
         "tools": ["Vue", "Node.js", "Express", "MongoDB"],
         "liveUrl": "https://movie-app-client-ruddy.vercel.app/",
-        "githubUrl": "https://github.com/NathMed/movieAppServer"
+        "githubUrl": "https://github.com/NathMed/movieAppServer/blob/main/README.md"
     },
-    {
-        "id": 4,
-        "title": "Zuitt Course Booking App",
-        "description": "Developed a full-stack course enrollment application using MongoDB, Express.js, Vue.js, and Node.js. Implemented JWT authentication, course browsing, enrollment workflows, and role-based admin tools. Built a RESTful API, documented endpoints using Postman, and integrated frontend and backend components.",
-        "image": "/images/myProjects/ZuiitCourse.png",
-        "tools": ["Vue", "Node.js", "Express", "MongoDB"],
-        "liveUrl": "https://course-booking-app-psi.vercel.app/",
-        "githubUrl": "https://github.com/NathMed/Course-Booking-API/blob/master/README.md"
-    },
-    
     {
         "id": 5,
         "title": "Flight606 (Airline Booking System)",
