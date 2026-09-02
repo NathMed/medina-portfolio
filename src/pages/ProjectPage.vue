@@ -13,26 +13,77 @@ import { computed } from 'vue'
 // Grouped so the markup below can loop instead of repeating five blocks —
 // same visual result, less duplication than writing each category out by hand.
 const toolGroups = [
-  { label: 'Language', tools: ['HTML', 'CSS', 'JavaScript', 'TypeScript'] },
-  { label: 'Front End', tools: ['Vue.js', 'Bootstrap 5', 'React (Learning)', 'Axios'] },
-  { label: 'Back End', tools: ['Node.js', 'Express', 'REST APIs', 'JWT'] },
-  { label: 'Database', tools: ['MongoDB'] },
-  { label: 'Tools', tools: ['Git', 'GitHub', 'VS Code', 'Vercel/Render', 'Figma', 'Postman'] },
-  { 
-    label: 'Core Competencies', 
-    tools: ['Full-Stack Development', 'Responsive Web Applications', 'Web Design', 'CRUD Operations', 'API Integration', 'Authentication & Authorization', 'Version Control', 'Deployment'] 
+  {
+    label: 'Languages',
+    tools: ['JavaScript', 'TypeScript', 'SQL', 'HTML', 'CSS']
   },
-  { 
-    label: 'Development Approach', 
-    tools: ['AI-Assisted Development (ChatGPT, Claude)', 'Debugging & Code Reviews', 'Documentation', 'Agile Workflows', 'Git & GitHub PR Workflows', 'Trello'] 
+  {
+    label: 'Front End',
+    tools: ['Vue.js', 'Bootstrap 5', 'Axios', 'Pinia', 'Vue Router', 'React']
   },
-  { 
-    label: 'Productivity Tools', 
-    tools: ['Microsoft Word', 'Excel', 'PowerPoint', 'Google Docs & Sheets', 'Google Drive & Forms', 'Google Calendar'] 
+  {
+    label: 'Back End',
+    tools: ['Node.js', 'Express.js', 'REST APIs', 'JWT']
   },
-  { 
-    label: 'Soft Skills', 
-    tools: ['Problem Solving', 'Analytical Thinking', 'Customer Service', 'Documentation', 'Time Management', 'Team Collaboration'] 
+  {
+    label: 'Database',
+    tools: ['MongoDB', 'MySQL', 'Relational Database Fundamentals']
+  },
+  {
+    label: 'Testing & QA',
+    tools: [
+      'Mocha',
+      'Chai',
+      'chai-http',
+      'API Testing',
+      'Integration Testing',
+      'Unit Testing',
+      'Test Cases',
+      'Test Scenarios',
+      'TDD',
+      'Arrange-Act-Assert (AAA)'
+    ]
+  },
+  {
+    label: 'Tools',
+    tools: [
+      'Git',
+      'GitHub',
+      'VS Code',
+      'Postman',
+      'Vercel',
+      'Render',
+      'Trello',
+      'Figma'
+    ]
+  },
+  {
+    label: 'Core Competencies',
+    tools: [
+      'Backend Development',
+      'Full-Stack Development',
+      'REST API Development',
+      'CRUD Operations',
+      'API Integration',
+      'Authentication & Authorization',
+      'Database Operations',
+      'Debugging',
+      'Deployment',
+      'Technical Documentation'
+    ]
+  },
+  {
+    label: 'Development Approach',
+    tools: [
+      'Problem Solving',
+      'Analytical Thinking',
+      'Task Breakdown',
+      'Debugging',
+      'Team Collaboration',
+      'Git & GitHub Workflows',
+      'Agile-style Collaboration',
+      'Technical Documentation'
+    ]
   }
 ]
 </script>
