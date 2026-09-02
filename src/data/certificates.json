@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Preparatory Course for Git, HTML & CSS",
+    "issuer": "Zuitt Learning Institute Incorporated",
+    "date": "Jan 2026",
+    "image": "/images/myCertificates/git-html-css.png",
+    "description": "Completed foundational training in Git, HTML, and CSS, covering version control and the fundamentals of building and styling web pages.",
+    "link": "http://share.zertify.zuitt.co/certificate/3cc4b07f-94dd-4b5c-bdf8-817719e08860"
+  },
+  {
+    "id": 2,
+    "title": "Preparatory Course for JavaScript",
+    "issuer": "Zuitt Learning Institute Incorporated",
+    "date": "Jan 2026",
+    "image": "/images/myCertificates/javascript.png",
+    "description": "Completed JavaScript training covering programming fundamentals, functions, objects, arrays, and web development concepts.",
+    "link": "http://share.zertify.zuitt.co/certificate/deb4358b-dabf-4288-b9f7-51bbcbf745f9"
+  },
+  {
+    "id": 3,
+    "title": "MEVN Stack Development",
+    "issuer": "Zuitt Learning Institute Incorporated",
+    "date": "Jun 2026",
+    "image": "/images/myCertificates/mevn.png",
+    "description": "Completed full-stack web development training using MongoDB, Express.js, Vue.js, and Node.js, covering frontend and backend application development.",
+    "link": "http://share.zertify.zuitt.co/certificate/2b357af0-5c56-4717-8a54-307889bd44dd"
+  },
+  {
+    "id": 4,
+    "title": "Introduction to Unit Testing",
+    "issuer": "Zuitt Learning Institute Incorporated",
+    "date": "Aug 2026",
+    "image": "/images/myCertificates/unit-testing.png",
+    "description": "Completed training in unit and API integration testing using Mocha, Chai, and chai-http, with structured test cases and the Arrange-Act-Assert approach.",
+    "link": "http://share.zertify.zuitt.co/certificate/13d7ccfd-7f43-42db-8adb-a181b921afae"
+  },
+  {
+    "id": 5,
+    "title": "Introduction to MySQL",
+    "issuer": "Zuitt Learning Institute Incorporated",
+    "date": "Aug 2026",
+    "image": "/images/myCertificates/mySQL.png",
+    "description": "Completed foundational MySQL training covering SQL queries, CRUD operations, JOINs, primary and foreign keys, table relationships, and database normalization.",
+    "link": "http://share.zertify.zuitt.co/certificate/8b4dc967-faa2-46cc-8d22-7ee9192a8722"
+  }
+]

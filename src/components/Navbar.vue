@@ -57,6 +57,11 @@
             </router-link>
 
             <router-link
+                :to="{ path: '/certificates' }"
+                class="nav-link">Certificates
+            </router-link>
+
+            <router-link
                 :to="{ path: '/contact' }"
                 class="nav-link">Contact
             </router-link>

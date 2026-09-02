@@ -3,14 +3,6 @@ import projects from '../data/projects.json'
 import ProjectCard from '../components/ProjectCard.vue'
 import { computed } from 'vue'
 
-const rowSize = 3
-const rowProjects = computed(() => {
-  const row = []
-  for (let i = 0; i < projects.length; i += rowSize) {
-    row.push(projects.slice(i, i + rowSize))
-  }
-  return row
-})
 // NOTE: Bootstrap's grid actually wraps columns on its own once a row
 // fills up (e.g. four `col-lg-4`s in one .row will wrap to a second line
 // automatically). You likely don't need to manually chunk into rows of 3 —
@@ -55,18 +47,16 @@ const toolGroups = [
         <h1 class="section-title">My Projects</h1>
       </div>
 
-      <div
-        v-for="(group, index) in rowProjects"
-        :key="index"
-        class="row g-4 justify-content-center mb-4"
-      >
+      <div class="row g-4 justify-content-center">
+
         <div
-          v-for="project in group"
+          v-for="project in projects"
           :key="project.id"
           class="col-12 col-md-6 col-lg-4"
         >
           <ProjectCard :project="project" />
         </div>
+
       </div>
 
     </div>
@@ -81,25 +71,25 @@ const toolGroups = [
 		<h1 class="section-title">Tools &amp; Tech Stack</h1>
 		</div>
 		
-		<div class="row g-4">
-		<div 
-			v-for="group in toolGroups" 
-			:key="group.label" 
-			class="col-12 col-md-6 col-lg-3"
-		>
-			<div class="tool-group">
-			<h4 class="tool-group-label">{{ group.label }}</h4>
-			<div class="tool-chip-list">
-				<span 
-				v-for="tool in group.tools" 
-				:key="tool" 
-				class="tool-chip"
-				>
-				{{ tool }}
-				</span>
-			</div>
-			</div>
-		</div>
+		<div class="row g-4 justify-content-center">
+      <div 
+        v-for="group in toolGroups" 
+        :key="group.label" 
+        class="col-12 col-md-6 col-lg-3"
+      >
+        <div class="tool-group">
+        <h4 class="tool-group-label">{{ group.label }}</h4>
+        <div class="tool-chip-list">
+          <span 
+          v-for="tool in group.tools" 
+          :key="tool" 
+          class="tool-chip"
+          >
+          {{ tool }}
+          </span>
+        </div>
+        </div>
+      </div>
 		</div>
 	</div>
 	</section>

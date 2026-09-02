@@ -11,6 +11,7 @@ import App from './App.vue'
 import ProjectPage from './pages/ProjectPage.vue';
 import LandingPage from './pages/LandingPage.vue';
 import ContactPage from './pages/ContactPage.vue';
+import CertificatesPage from './pages/CertificatesPage.vue';
 
 // ROUTES
 import { createApp } from 'vue';
@@ -29,6 +30,11 @@ const router = createRouter({
             path: '/projects',
             name: 'ProjectPage',
             component: ProjectPage
+        },
+        {
+            path: '/certificates',
+            name: 'CertificatesPage',
+            component: CertificatesPage
         },
         {
             path: '/contact',
