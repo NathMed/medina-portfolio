@@ -200,7 +200,7 @@ onBeforeUnmount(() => {
                    opening a resume. It's now a plain download link.
                    Swap the href for wherever your actual resume file lives
                    (e.g. "/resume.pdf" in your public/ folder). -->
-              <a href="https://drive.google.com/file/d/1vjPB9WDfxMa9MON2Vu25W1Pvbo4WbaKc/view?usp=sharing" target="_blank" class="btn-pill btn-pill-outline text-center">
+              <a href="https://drive.google.com/file/d/1wU_gIhI6hhItEmuk5df2NukwLo63iutw/view?usp=sharing" target="_blank" class="btn-pill btn-pill-outline text-center">
                 Resume
               </a>
 
