@@ -26,13 +26,15 @@
           <h1 class="name-line">Nathaniel Medina</h1>
 
           <p class="intro-text">
-            Hi, I'm Nathaniel — a full-stack developer building with
-            <span class="stack-tag">MongoDB</span>,
-            <span class="stack-tag">Express</span>,
-            <span class="stack-tag">Vue</span>, and
-            <span class="stack-tag">Node</span>.
-            I enjoys building practical web applications and continuously learning modern technologies.
-            I'm currently focused on React, TypeScript, Node.js, Express, and PostgreSQL while continuously improving through hands-on projects.
+            Hi, I'm Nathaniel — a junior JavaScript developer focused on backend development, REST APIs, software testing, and automation.<br>
+
+            I build practical web applications and backend services using
+            <span class="stack-tag">Vue.js</span>,
+            <span class="stack-tag">JavaScript</span>,
+            <span class="stack-tag">Node.js</span>,
+            <span class="stack-tag">Express.js</span>,
+            <span class="stack-tag">MongoDB,</span>, and
+            <span class="stack-tag">SQL</span>.<br><br>
           </p>
 
           <router-link
