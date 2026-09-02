@@ -115,30 +115,28 @@ nav a {
 }
 
 
-/*Contact*/
+/* Contact */
 
 #contact {
-	background-color: #FBF8CC;
-	color: #005b4a;
-	font-family: Montserrat;
-	font-weight: 900;
-	leading-trim: NONE;
-	line-height: 24px;
-	letter-spacing: 0%;
-	height: 80vh !important;
+    background-color: var(--parchment);
+    color: var(--forest-deep);
+    font-family: var(--font-body);
+    padding: 5rem 0;
+    min-height: 100vh;
 }
 
 #contact button {
-	color: FBF8CC;
-	background-color: #005b4a;
+    color: var(--parchment);
+    background-color: var(--forest-deep);
 }
 
 form a {
-	color: #005b4a;
+    color: var(--forest-deep);
 }
 
-form a:hover, form button:hover {
-  transform: scale(1.1);
+form a:hover,
+form button:hover {
+    transform: scale(1.05);
 }
 
 

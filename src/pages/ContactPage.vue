@@ -132,20 +132,20 @@ onBeforeUnmount(() => {
         <h1 class="section-title">Contact Me</h1>
       </div>
 
-      <div class="row align-items-start justify-content-center g-5">
+      <div class="row align-items-start justify-content-center g-4 g-lg-5">
 
         <!-- Map -->
-        <div class="col-11 col-lg-5">
-		  <span class="eyebrow">Near this area</span>
+        <div class="col-12 col-lg-5">
+          <span class="eyebrow">Near this area</span>
           <div class="ratio ratio-4x3 map-frame">
 
-			<iframe 
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8660.844303751051!2d121.07221388963204!3d14.770856822217592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a5b66dd73db7%3A0xebcec70186c75658!2sMetroplaza%20Mall!5e0!3m2!1sen!2sph!4v1784208153248!5m2!1sen!2sph" 
-			style="border:0;" 
-			allowfullscreen="" 
-			loading="lazy" 
-			referrerpolicy="strict-origin-when-cross-origin"
-			></iframe>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8660.844303751051!2d121.07221388963204!3d14.770856822217592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a5b66dd73db7%3A0xebcec70186c75658!2sMetroplaza%20Mall!5e0!3m2!1sen!2sph!4v1784208153248!5m2!1sen!2sph" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
 
           </div>
         </div>
@@ -159,7 +159,7 @@ onBeforeUnmount(() => {
                 v-model="name"
                 type="text"
                 class="form-control contact-input"
-                placeholder="First Name MI Last Name"
+                placeholder="Name"
                 required
               />
             </div>
@@ -200,7 +200,7 @@ onBeforeUnmount(() => {
                    opening a resume. It's now a plain download link.
                    Swap the href for wherever your actual resume file lives
                    (e.g. "/resume.pdf" in your public/ folder). -->
-              <a href="https://drive.google.com/file/d/1zol6gVo3_3DIwKJlxeLfhrQbyl42lvbD/view?usp=drive_link" target="_blank" class="btn-pill btn-pill-outline text-center">
+              <a href="https://drive.google.com/file/d/1vjPB9WDfxMa9MON2Vu25W1Pvbo4WbaKc/view?usp=sharing" target="_blank" class="btn-pill btn-pill-outline text-center">
                 Resume
               </a>
 
@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
               </button>
             </div>
 
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end recaptcha-wrapper">
               <div ref="recaptchaContainer"></div>
             </div>
           </form>
@@ -225,10 +225,12 @@ onBeforeUnmount(() => {
 
 #contact {
   background-color: var(--parchment);
-  color: var(--ink);
+  color: var(--forest-deep);
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
+/* Heading */
 .section-heading {
   margin-bottom: 3rem;
 }
@@ -259,18 +261,27 @@ onBeforeUnmount(() => {
   box-shadow: var(--shadow-soft);
 }
 
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 /* ---- Form fields ---- */
 .contact-input {
+  width: 100%;
   font-family: var(--font-body);
   background: var(--parchment-soft);
   border: 1px solid rgba(11, 77, 62, 0.25);
   border-radius: var(--radius-pill);
-  padding: 0.75rem 1.25rem;
+  padding: 0.85rem 1.25rem;
   color: var(--ink);
 }
 
 .contact-textarea {
-  border-radius: 1.25rem; /* softly-rounded corners instead of a pill, since a pill-shaped textarea looks odd at 5 rows tall */
+  min-height: 150px;
+  resize: vertical;
+  border-radius: 1.25rem;
 }
 
 .contact-input:focus {
@@ -294,6 +305,13 @@ onBeforeUnmount(() => {
    Same pill language as the landing hero's "Hire me" button:
    one filled (primary action = Submit), one outline (secondary
    action = Request a Resume), so they don't compete for attention. */
+.contact-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
 .btn-pill {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -329,6 +347,61 @@ onBeforeUnmount(() => {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
+}
+
+/* reCAPTCHA */
+.recaptcha-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  #contact {
+    padding: 4rem 0;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .map-frame {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  #contact {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-actions .btn-pill {
+    width: 100%;
+    text-align: center;
+  }
+
+  .recaptcha-wrapper {
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
